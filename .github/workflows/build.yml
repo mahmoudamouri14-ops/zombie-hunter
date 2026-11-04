@@ -27,9 +27,7 @@ jobs:
         command: buildozer -v android release
 
     - name: Upload APK/AAB artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: package
         path: bin/*.aab
-
-# test
